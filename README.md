@@ -1,1 +1,211 @@
-# fbautodetails.github.io
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="F&B Auto Details provides top-tier interior car detailing services including vacuuming, upholstery cleaning, and full interior restoration. Book now for a spotless car!">
+    <meta name="keywords" content="auto detailing, car cleaning, upholstery, vacuum, interior restoration, auto detailing services">
+    <meta property="og:title" content="F&B Auto Details | Interior Car Detailing">
+    <meta property="og:description" content="Best auto detailing services for a clean and fresh interior. Book your appointment with F&B Auto Details!">
+    <meta property="og:image" content="image-url.jpg">
+    <title>F&B Auto Details</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #121212;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3 {
+            color: #f1c40f; /* Gold color */
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .btn {
+            background-color: #f1c40f;
+            color: #121212;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #fff;
+            color: #000;
+            transform: scale(1.1);
+        }
+
+        /* Hero Section with Background Video */
+        .hero {
+            position: relative;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .background-video {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Sticky Navbar */
+        #navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: #000;
+            padding: 20px 0;
+        }
+
+        #navbar a {
+            color: #f1c40f;
+            text-decoration: none;
+            padding: 15px 20px;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+        }
+
+        #navbar a:hover {
+            background-color: #f1c40f;
+            color: #121212;
+            transform: scale(1.05);
+        }
+
+        /* Service Cards */
+        .service-card {
+            transition: all 0.3s ease-in-out;
+            padding: 20px;
+            border: 2px solid #f1c40f;
+            border-radius: 10px;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Fade-In Animation */
+        .fade-in {
+            animation: fadeIn 2s ease-out;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            .hero p {
+                font-size: 1.2rem;
+            }
+            .btn {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div id="navbar">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Hero Section with Video Background -->
+    <div class="hero">
+        <video autoplay muted loop class="background-video">
+            <source src="your-video-url.mp4" type="video/mp4">
+        </video>
+        <div class="hero-content">
+            <h1>F&B Auto Details</h1>
+            <p>Premium Interior Car Detailing Services</p>
+            <a href="#services" class="btn">Book Now</a>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services" class="fade-in">
+        <h2>Our Services</h2>
+        <div class="service-card">
+            <h3>Basic Clean – $70</h3>
+            <p>Quick vacuum, wipe-down, windows, light freshener. Perfect for regular upkeep.</p>
+        </div>
+        <div class="service-card">
+            <h3>Standard Detail – $100</h3>
+            <p>Full vacuum, deep surface clean, stain touch-up, floor mat wash, odor eliminator.</p>
+        </div>
+        <div class="service-card">
+            <h3>Premium Deep Clean – $180</h3>
+            <p>Shampoo carpets, leather care, deep crevice clean, full interior restore, ideal for tough jobs.</p>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="fade-in">
+        <h2>Contact Us</h2>
+        <p>Phone: <a href="tel:6304576162">630-457-6162</a></p>
+        <p>Email: <a href="mailto:fbautodetails@gmail.com">fbautodetails@gmail.com</a></p>
+        <p>Follow us on TikTok and Instagram: <strong>@fb.auto.details</strong></p>
+    </div>
+
+    <script>
+        // Scroll Animation for Sections
+        window.addEventListener("scroll", function() {
+            let sections = document.querySelectorAll('.fade-in');
+            sections.forEach(section => {
+                if (isElementInViewport(section)) {
+                    section.classList.add("animate");
+                }
+            });
+        });
+
+        function isElementInViewport(el) {
+            let rect = el.getBoundingClientRect();
+            return rect.top <= window.innerHeight && rect.bottom >= 0;
+        }
+    </script>
+</body>
+</html>
